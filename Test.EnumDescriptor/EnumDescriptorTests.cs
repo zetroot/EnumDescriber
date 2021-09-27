@@ -8,11 +8,19 @@ namespace Test.EnumDescriptor
     public class EnumDescriptorTests
     {
         private const string ExpectedDescription = "Some description";
+        private const string ExpectedDescription2 = "Other description";
 
         private enum StubEnum
         {
             NotDescripted,
             [Description(ExpectedDescription)] Descripted,
+            [Description] BlankDescription
+        }
+
+        private enum StubEnum2
+        {
+            NotDescripted,
+            [Description(ExpectedDescription2)] Descripted,
             [Description] BlankDescription
         }
 
@@ -35,6 +43,15 @@ namespace Test.EnumDescriptor
         {
             var actualDescription = StubEnum.BlankDescription.GetDescription();
             Assert.Equal(string.Empty, actualDescription);
+        }
+
+        [Fact]
+        public void GetDescription_OnDifferentEnums_DescriptionsAreNotMixed()
+        {
+            var actualDescription = StubEnum.Descripted.GetDescription();
+            var actualDescription2 = StubEnum2.Descripted.GetDescription();
+            Assert.Equal(ExpectedDescription, actualDescription);
+            Assert.Equal(ExpectedDescription2, actualDescription2);
         }
     }
 }
