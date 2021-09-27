@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumDesriptor", "EnumDesriptor\EnumDesriptor.csproj", "{8577A394-D835-43AB-B4FC-465878C97A54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.EnumDescriptor", "Test.EnumDescriptor\Test.EnumDescriptor.csproj", "{927DA39C-3649-4268-A027-EFA6BFF7AE89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8577A394-D835-43AB-B4FC-465878C97A54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8577A394-D835-43AB-B4FC-465878C97A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8577A394-D835-43AB-B4FC-465878C97A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8577A394-D835-43AB-B4FC-465878C97A54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{927DA39C-3649-4268-A027-EFA6BFF7AE89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{927DA39C-3649-4268-A027-EFA6BFF7AE89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{927DA39C-3649-4268-A027-EFA6BFF7AE89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{927DA39C-3649-4268-A027-EFA6BFF7AE89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
