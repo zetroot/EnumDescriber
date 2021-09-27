@@ -11,7 +11,7 @@ namespace EnumDesriptor
     /// </summary>
     public static class EnumExtensions
     {
-        private static readonly Dictionary<Enum, string> descMap = new();
+        private static readonly Dictionary<Enum, string> DescMap = new();
 
         private static string GetDescriptionImpl(Enum value)
         {
@@ -31,10 +31,10 @@ namespace EnumDesriptor
         /// <returns>Строка с описанием из аттрибута Description,</returns>
         public static string GetDescription<T>(this T item) where T: struct, Enum
         {
-            if (descMap.TryGetValue(item, out var desc))
+            if (DescMap.TryGetValue(item, out var desc))
                 return desc;
             var description = GetDescriptionImpl(item);
-            descMap.Add(item, description);
+            DescMap.Add(item, description);
             return description;
         }
     }
