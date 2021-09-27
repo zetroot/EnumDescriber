@@ -1,0 +1,30 @@
+name: smoke test
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  build-n-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 5.0.x
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --no-restore --configuration Release --nologo
+
+      - name: Test
+        run: dotnet test --no-build --configuration Release --nologo --verbosity normal --collect:"XPlat code coverage"
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
