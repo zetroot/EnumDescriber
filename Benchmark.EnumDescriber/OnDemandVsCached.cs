@@ -4,9 +4,9 @@ using System.ComponentModel;
 using System.Reflection;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Jobs;
-using EnumDesriptor;
+using EnumDesriber;
 
-namespace Benchmark.EnumDescriptor
+namespace Benchmark.EnumDescriber
 {
     public class OnDemandVsCached
     {

@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace Benchmark.EnumDescriptor
+namespace Benchmark.EnumDescriber
 {
     public enum StubEnum
     {

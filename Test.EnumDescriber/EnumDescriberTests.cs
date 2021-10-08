@@ -1,11 +1,11 @@
 using System;
 using System.ComponentModel;
-using EnumDesriptor;
+using EnumDesriber;
 using Xunit;
 
-namespace Test.EnumDescriptor
+namespace Test.EnumDescriber
 {
-    public class EnumDescriptorTests
+    public class EnumDescriberTests
     {
         private const string ExpectedDescription = "Some description";
         private const string ExpectedDescription2 = "Other description";

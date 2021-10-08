@@ -1,7 +1,7 @@
 ﻿using System;
 using BenchmarkDotNet.Running;
 
-namespace Benchmark.EnumDescriptor
+namespace Benchmark.EnumDescriber
 {
     class Program
     {
