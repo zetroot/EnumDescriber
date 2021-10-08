@@ -3,7 +3,4 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
-.idea/.idea.EnumDesriptor/.idea/encodings.xml
-.idea/.idea.EnumDesriptor/.idea/indexLayout.xml
-.idea/.idea.EnumDesriptor/.idea/misc.xml
-.idea/.idea.EnumDesriptor/.idea/vcs.xml
+.idea/
