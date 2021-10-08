@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Reflection;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Jobs;
-using EnumDesriber;
+using EnumDescriber;
 
 namespace Benchmark.EnumDescriber
 {

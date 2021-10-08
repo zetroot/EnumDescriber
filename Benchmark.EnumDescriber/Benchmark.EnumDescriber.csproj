@@ -14,7 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\EnumDesriber\EnumDesriber.csproj" />
+      <ProjectReference Include="..\EnumDescriber\EnumDescriber.csproj" />
     </ItemGroup>
 
 </Project>

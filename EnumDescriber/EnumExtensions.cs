@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
 
-namespace EnumDesriber
+namespace EnumDescriber
 {
     /// <summary>
     /// Класс методов расширения для <see langward="enum"/> для получения описания членов перечисления, декорированных

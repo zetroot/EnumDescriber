@@ -1,6 +1,6 @@
 using System;
 using System.ComponentModel;
-using EnumDesriber;
+using EnumDescriber;
 using Xunit;
 
 namespace Test.EnumDescriber
